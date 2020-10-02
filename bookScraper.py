@@ -8,11 +8,11 @@ def getBookID(title, author):
     payload = {"q": queryStr}
     r = requests.get("https://www.googleapis.com/books/v1/volumes", params=payload)
     #print(r.status_code)
-    #print(r.url)
+    print(r.url)
     if r.status_code==200:
         dict = r.json()
         items = dict["items"]
-        topBook = items[1]
+        topBook = items[0]
         bookID = topBook["id"]
         print("Direct link is "+topBook["selfLink"]+" and the id is "+bookID)
     else:
@@ -23,11 +23,18 @@ def getBookID(title, author):
 def makeQueryStr(title, author):
     cleanTitle=title.lower()
     cleanAuthor=author.lower()
-    cleanAuthor = cleanAuthor.replace(" ", "+")
     paramStr=cleanTitle+"+inauthor:"+cleanAuthor
     return paramStr
 
 #function that pulls page number and genere info for a given book ID
+
+def getBookInfo(bookID):
+    r = requests.get("https://www.googleapis.com/books/v1/volumes/"+bookID)
+    bookInfo = r.json()
+    volumeInfo = bookInfo["volumeInfo"]
+    pageCount = volumeInfo["printedPageCount"]
+    genres = volumeInfo["categories"]
+    return [pageCount, genres]
 
 #Function that updates read info for a given book (unclear what the reference will be, or whether that should be in this file)
 
@@ -39,4 +46,6 @@ topBook = items[1]
 bookID = topBook["id"]
 print("Direct link is "+topBook["selfLink"]+" and the id is "+bookID) """
 
-getBookID("Beowulf", "Seamus Heaney")
+bookID = getBookID("Portnoy's Complaint", "Philip Roth")
+print(getBookInfo(bookID))
+
