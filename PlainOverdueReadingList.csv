@@ -1,6 +1,9 @@
 001,Of Mice and Men,John Steinbeck
+002,Love In the Time of Cholera,Gabriel Garcia Marquez
 003,Tiny Alice,Edward Albee
+004,The Da Vinci Code,Dan Brown
 005,Beowulf,Seamus Haney
+006,The Metamorphosis,Franz Kafka
 007,All Quiet on the Western Front,Erich Maria Remarque
 008,Dune,Frank Herbert
 009,The Turn of the Screw,Henry James
@@ -47,7 +50,8 @@
 050,Fifty Shades of Grey,E.L. James
 051,Replay,Ken Grimwood
 052,Extra Innings,Baseball Prospectus
-053,The Yellow Wallpaper/The Lottery,Various
+053,The Yellow Wallpaper,Charlotte Perkins Gilman
+053,The Lottery,Shirley Jackson
 054,In the Woods,Tana French
 055,To Kill a Mockingbird,Harper Lee
 056,The Misanthrope,Moliere
@@ -55,10 +59,12 @@
 058,The Passage,Justin Cronin
 059,The Celebrated Jumping Frog,Mark Twain
 060,Watchmen,Alan Moore
-061,The Lorax/Oh the Places You'll Go,Dr. Seuss
+061,The Lorax,Dr. Seuss
+061,Oh the Places You'll Go,Dr. Seuss
 062,The Giver,Lois Lowry
 063,King Lear,William Shakespeare
-064,Big Blonde/Here We Are,Dorothy Parker
+064,Big Blonde,Dorothy Parker
+064,Here We Are,Dorothy Parker
 065,The Marriage Plot,Jeffrey Eugenides
 066,The Muder of Roger Ackroyd,Agatha Christie
 067,Bossypants,Tina Fey
@@ -72,13 +78,13 @@
 075,The Hairy Ape,Eugene O'Neill
 076,This Is How You Lose Her,Junot Diaz
 077,"Surely You're Joking, Mr. Feynman",Richard Feynman
-078,The Mystery of Chimney Rock,Choose Your Own Adventure
+078,The Mystery of Chimney Rock,Edward Packard
 079,The Homecoming,Harold Pinter
 080,The Legend of Sleepy Hollow,Washington Irving
 081,Rosemary's Baby,Ira Levin
 082,At the Mountains of Madness,H.P. Lovecraft
 083,The Mummy,Anne Rice
-084,You Are a Monster,Choose Your Own Adventure
+084,You Are a Monster,Edward Packard
 085,Colorless Tsukuru Tazaki,Haruki Murakami
 086,Summerland,Michael Chabon
 087,Gone Girl,Gillian Flynn
@@ -86,13 +92,12 @@
 089,The Handmaid's Tale,Margaret Atwell
 090,Lonesome Dove,Larry McMurtry
 091,In Cold Blood,Truman Capote
-092,A Kidnapped Santa Claus/Hershel,L. Frank Baum
 093,Lolita,Vladmir Nabokov
 094,The Secret History,Donna Tartt
 095,Moby-Dick,Herman Melville
 096,Something Wicked This Way Comes,Ray Bradbury
 097,Batman: The Long Halloween,Jeph Loeb
-098,Secret of the Ninja,Choose Your Own Adventure
+098,Secret of the Ninja,Jay Leibold
 099,Six Characters in Search of an Author,Luigi Pirandello
 100,Fifty Shades Darker,E.L. James
 101,The Man in the High Castle,Philip K. Dick
@@ -115,7 +120,7 @@
 118,Blood Meridian,Cormac McCarthy
 119,Across a Hundred Mountains,Reyna Grande
 120,A Boy and His Dog,Harlan Ellison
-121,Space Vampire,Choose Your Own Adventure
+121,Space Vampire,Edward Packard
 122,To the Lighthouse,Virginia Woolf
 123,Till We Have Face,C.S. Lewis
 124,Wit,Margaret Edson
@@ -133,11 +138,10 @@
 136,The Return of the King,J.R.R. Tolkien
 137,The Martian,Andy Weir
 138,Bunnicula,James and Deborah Howe
-139,Ghost Train,Choose Your Own Adventure
+139,Ghost Train,Louise Foley
 140,The Amityville Horror,Jay Anson
 141,Rebecca,Daphne de Maurier
 142,Wuthering Heights,Emily Bronte
-143,Ghost Stories and Urban Legends,Various
 144,The Last of the Wine,Mary Renault
 145,A Confederacy Dunces,John Kennedy Toole
 146,A Good Man Is Hard to Find,Flannery O'Connor
@@ -161,7 +165,7 @@
 164,Speedboat,Renata Adler
 165,Peter Pan,J.M. Barrie
 166,When Women Were Birds,Terry Tempest Williams
-167,Statue of Liberty Adventure,Choose Your Own Adventure
+167,Statue of Liberty Adventure,Ellen Kushner
 168,The Rover,Aphra Behn
 169,Flowers in the Attic,V.C. Andrews
 170,Star Wars: Aftermath,Chuck Wendig
@@ -187,16 +191,15 @@
 191,The Phantom Tollbooth,Norton Juster
 192,Casino Royale,Ian Fleming
 193,Johannes Cabal the Necromancer,Jonathan L. Howard
-194,Prisoner of the Ant People,Choose Your Own Adventure
+194,Prisoner of the Ant People,R A Montgomery
 195,The Beggar's Opera,John Gay
 196,Watership Down,Richard Adams
-197,Open: How Compaq Ended IBM...,Rod Canion
+197,Open,Rod Canion
 198,The Magicians,Lev Grossman
 199,Tuck Everlasting,Natalie Babbitt
 200,Infinite Jest,David Foster Wallace
 201,Howl's Moving Castle,Diana Wynne
 202,The Woman in Black,Susan Hill
-203,Hook,(film)
 204,The Haunting of Hill House,Shirley Jackson
 205,The Werewolf of Paris,Guy Endore
 206,Ring,Koji Suzuki
@@ -233,7 +236,7 @@
 238,Everything is Illuminated,Jonathan Safran Foer
 239,The the Mixed-up Files of Mrs Basil E. Frankenweiler,E.L. Konigsburg
 240,The Brief Wondroys Life of Oscar Wao,Junot Diaz
-241,You Are A Shark,Choose Your Own Adventure
+241,You Are A Shark,Edward Packard
 242,Felidae,Akif Pirincci
 243,March,Geraldine Brooks
 244,Siddhartha,Hermann Hesse
@@ -255,11 +258,11 @@
 260,The Traitor,Michael Cisco
 261,Bridget Jones's Diary,Helen Fielding
 262,99 Fear Street (The First Horror),R.L. Stine
-264,The Murders in the Rue Morgue/ Cask of the Amontillado,Edgar Allan Poe
+264,The Murders in the Rue Morgue,Edgar Allan Poe
+264,Cask of the Amontillado,Edgar Allan Poe
 265,House of Leaves,Mark Z. Danielewski
 266,Bag of Bones,Stephen King
 267,Interview With The Vampire,Anne Rice
-268,Ghost Stories and Urban Legends,Various
 269,A Wrinkle in TIme,Madelein L'Engle
 270,The Great Gatsby,F. Scott Fitzgerald
 271,Ender's Game,Orson Scott Card
@@ -290,7 +293,7 @@
 296,Peyton Place,Grace Metalious
 297,Austerlitz,W.G. Sebald
 298,Mrs. Piggle-Wiggle,Betty MacDonald
-299,Rock and Roll Mystery,Choose Your Own Adventure
+299,Rock and Roll Mystery,Jim Wallace
 300,Twilight,Stephanie Meyer
 301,The Power,Naomi Alderman
 1001,The Odyssey,Homer
@@ -305,7 +308,7 @@
 310,Mystic River,Dennis Lehane
 311,The Underground Railroad,Colson Whitehead
 312,The Diary of a Young Girl,Anne Frank
-313,The Hardy Boys #1,Various
+313,The Tower Treasure,Franklin W. Dixon
 314,Love Story,Erich Segal
 315,Behold the Dreamers,Imbolo Mbue
 316,Johnny Tremain,Esther Forbes
@@ -318,7 +321,7 @@
 323,Say Cheese and Die,R.L. Stine
 324,Hex,Thomas Olde Heuvelt
 325,Hell House,Richard Matheson
-326,Terror on the Titanic,Choose Your Own Adventure
+326,Terror on the Titanic,Jim Wallace
 327,A Separate Peace,John Knowles
 328,The Indian In The Cupboard,Lynne Reid Banks
 329,Passing,Nella Larsen
@@ -339,14 +342,12 @@
 344,Speaker for the Dead,Orson Scott Card
 345,NOS4A2,Joe Hill
 346,Akata Witch,Nnedi Okorafor
-347,What to Expect When You're Expecting,Various
 348,Breakfast at Tiffany's,Truman Capote
 349,Columbus Day,Craig Alanson
 350,Slaughterhause 5,Kurt Vonnegut
 351,Breaking Dawn,Stephanie Meyer
 352,The Time Machine,H.G. Wells
 353,The Lies of Locke Lamora,Scott Lynch
-354,Fungus the Bogeyman/Dragons Love Tacos,Various
 355,John Dies at the End,David Wong
 356,Middlemarch,George Eliot
 357,11/22/63,Steven King
@@ -362,7 +363,7 @@
 368,Heart of Darkness,Joseph Conrad
 1002,Divine Comedy,Dante
 369,The Subtle Knife,Philip Pullman
-370,Knights of the Round Table,Choose Your Own Adventure
+370,Knights of the Round Table,Ellen Kushner
 371,Siblings Without Rivalry,Adele Faber and Elain Mazlish
 372,Tarzan of the Apes,Edgar Rice Burroughs
 373,"The Long Way to a Small, Angry Planet",Becky Chambers
@@ -386,27 +387,25 @@
 391,The Eyre Affair,Jasper Fforde
 392,Home for Hanukkah,Celine Banks
 393,The Mists of Avalon,Morgan Le Fay
-394,Lamb: The Gospel According to...,Christopher Moore
+394,Lamb,Christopher Moore
 395,The Prince,Niccolo Machiavelli
 396,The Testaments,Margaret Atwell
-397,Vampires Don't Wear Polka Dots,Various
 398,Wool,Hugh Howey
 399,The Wind Done Gone,Alice Randall
 400,The Hunger Games,Suzanne Collins
 401,The Westing Game,Ellen Raskin
 402,Paradise,Toni Morrison
 403,High Fidelity,Nick Hornby
-404,Sonic the Hedgehog,Various
 405,Friday Black,Nana Kwame Adjei-Brenyah
 406,Under the Skin,Michel Faber
 407,Guards! Guards!,Terry Pratchett
 408,The Bear and the Nightingale,Katherine Arden
 409,The Shadow of the Wind,Carlos Ruiz Zafon
 410,Catching Fire,Suzanne Collins
-411,Smoke Jumpers,Choose Your Own Adventure
+411,Smoke Jumpers,R A Montgomery
 412,A Death in the Family,James Agee
-413,Encyclopedia Brown,Various
-414,Llama Llama Red Pajama,Various
+413,Encyclopedia Brown,Donald J. Sobol
+414,Llama Llama Red Pajama,Anna Dewdney
 415,My Grandmother Asked Me To Tell You She's Sorry,Fredrik Backman
 416,Orlando: A Biography,Virginia Woolf
 417,Unaccustomed Earth,Jhumpa Lahiri
@@ -416,6 +415,7 @@
 421,The Vegetarian,Han Kang
 422,An Unseen Attraction,KJ Charles
 423,The Rise and Fall of the Dinosaurs,Steve Brusatte
+424,My Sister the Serial Killer,Oyinkan Braithwaite
 425,Mockingjay,Suzanne Collins
 426,The Hour of the Star,Clarice Lispector
 427,Deacon King Kong,James McBride
