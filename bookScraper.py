@@ -4,9 +4,9 @@ import sqlite3
 conn = sqlite3.connect('overduepod.db') #setting up access to sqlite db
 c = conn.cursor() #make sure to end with and conn.commit() and conn.close()
 
-c.execute("SELECT COUNT(*) FROM test")
-numEp = c.fetchone() #count how many episides there are in the db
-numEp = numEp[0] #extract just the number from the tuple
+c.execute("SELECT COUNT(*) FROM epList")
+numRows = c.fetchone() #count how many rows there are in the db
+numRows = numRows[0] #extract just the number from the tuple
 
 #the https response is a dictionary, the items value is a list of books, each book is a dictionary
 
@@ -24,7 +24,7 @@ def getBookID(title, author):
         bookID = topBook["id"] 
         #print("Direct link is "+topBook["selfLink"]+" and the id is "+bookID)
     else: #other status codes can indicate error, break (currently setting bookID to 0 but I don't love it)
-        print("Error with request: "+r.status_code)
+        print("Error with request: "+str(r.status_code))
         bookID=0
     return bookID
  
@@ -47,9 +47,9 @@ def getBookInfo(bookID):
 
 #function that cycles through the epList to identify books
 def epCycle():
-    for n in range(1, numEp): #var up at the top that determines how many items are in the list
+    for n in range(389, numRows): #var up at the top that determines how many items are in the list
         print(str(n))
-        c.execute("SELECT title, author FROM test WHERE epNumber =?", [str(n)])
+        c.execute("SELECT title, author FROM epList WHERE rowid =?", [str(n)])
         book = c.fetchone()
         title = book[0] 
         author = book[1]
@@ -59,35 +59,17 @@ def epCycle():
 
 def addBook(title, author):
     bookID = getBookID(title, author) #run helper function to identify book ID from title and author
-    c.execute("INSERT INTO bookList VALUES (?, ?, ?)", (title, author, bookID)) #insert into SQL database
+    c.execute("INSERT OR IGNORE INTO bookList VALUES (?, ?, ?)", (title, author, bookID)) #insert into SQL database, skip if already there
+    conn.commit()
 
 #function that adds other book into the book database
 
 #Function that updates read info for a given book (unclear what the reference will be, or whether that should be in this file)
 
 
-c.execute("SELECT title, author FROM test WHERE epNumber =?", ["53"])
-book = c.fetchone()
-testTitle = book[0]
-testAuthor = book[1]
-print(book)
-
-bookID = getBookID(testTitle, testAuthor)
-print(getBookInfo(bookID))
-
-addBook(testTitle, testAuthor)
-
-#epCycle()
-#c.execute("SELECT * FROM bookList LIMIT 20")
-#print(c.fetchall())
 
 
+
+#conn.commit()
 conn.close()
 
-
-
-"""
-current notes: fails on the "multiple short stories thing", like in ep 53 when they talk about The Lottery 
-and The Yellow Wallpaper. No search results are found so it fails. The solution would seem to be like, having something
-where each episode can point to multiple books, but that causes errors with having epNumber as a primary key.
-"""
