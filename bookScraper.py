@@ -5,8 +5,9 @@ conn = sqlite3.connect('overduepod.db') #setting up access to sqlite db
 c = conn.cursor() #make sure to end with and conn.commit() and conn.close()
 
 c.execute("SELECT COUNT(*) FROM epList")
-numRows = c.fetchone() #count how many rows there are in the db
-numRows = numRows[0] #extract just the number from the tuple
+numEpRows = c.fetchone() #count how many rows there are in the db
+numEpRows = numEpRows[0] #extract just the number from the tuple
+
 
 #the https response is a dictionary, the items value is a list of books, each book is a dictionary
 
@@ -47,7 +48,7 @@ def getBookInfo(bookID):
 
 #function that cycles through the epList to identify books
 def epCycle():
-    for n in range(389, numRows): #var up at the top that determines how many items are in the list
+    for n in range(389, numEpRows): #var up at the top that determines how many items are in the list
         print(str(n))
         c.execute("SELECT title, author FROM epList WHERE rowid =?", [str(n)])
         book = c.fetchone()
@@ -62,11 +63,9 @@ def addBook(title, author):
     c.execute("INSERT OR IGNORE INTO bookList VALUES (?, ?, ?)", (title, author, bookID)) #insert into SQL database, skip if already there
     conn.commit()
 
-#function that adds other book into the book database
+#function that adds other book info the book database
 
 #Function that updates read info for a given book (unclear what the reference will be, or whether that should be in this file)
-
-
 
 
 
